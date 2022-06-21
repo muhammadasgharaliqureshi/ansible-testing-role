@@ -1,0 +1,5 @@
+---
+- name: Installing Microsoft Edge.
+  ansible.builtin.yum:
+    name: "{{ microsoft_edge_app }}-{{ micrsoft_edge_version }}-1.x86_64.rpm"
+    state: present
